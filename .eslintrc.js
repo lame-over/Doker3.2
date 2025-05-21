@@ -1,9 +1,11 @@
+// .eslintrc.js
 module.exports = {
   env: {
     node: true,
   },
-  extends: ['airbnb-base'],
+  extends: ['eslint:recommended'],
   rules: {
-    'no-console': 'off',
-  },
+    'semi': ['error', 'always'],
+    'quotes': ['error', 'single']
+  }
 };
