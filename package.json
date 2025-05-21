@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "lint": "eslint ."
-  },
-  "dependencies": {}
+{
+  "devDependencies": {
+    "eslint": "^8.56.0"  // Спеціально стабільна версія 8.x
+  }
 }
