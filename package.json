@@ -2,3 +2,14 @@
   "lint": "eslint .",
   "lint:fix": "eslint . --fix"
 }
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node app.js",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
