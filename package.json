@@ -1,10 +1,12 @@
 {
-  "name": "your-app",
+  "name": "nodejs-sonarcloud-app",
   "version": "1.0.0",
+  "description": "Node.js + SonarCloud",
+  "main": "index.js",
   "scripts": {
-    "lint": "eslint ."
-{
-  "devDependencies": {
-    "eslint": "^8.56.0"  // Спеціально стабільна версія 8.x
-  }
+    "start": "node index.js",
+    "test": "echo \"Hello CHSBC\" && exit 0"
+  },
+  "author": "DEVIL",
+  "license": "ISC"
 }
