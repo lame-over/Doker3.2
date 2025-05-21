@@ -5,15 +5,13 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          
-      - name: Install dependencies
-        run: npm install
-      
-      - name: Run ESLint
-        run: npx eslint .
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+  
+    - name: Install specific ESLint version
+      run: npm install eslint@8.56.0 --save-dev
+  
+    - name: Run ESLint
+      run: npx eslint .
